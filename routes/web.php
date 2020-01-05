@@ -23,3 +23,8 @@ Route::get('/getUpdateArticleByID/{id}', ['as' => 'getUpdateArticleByID/', 'uses
 Route::post('/postUpdateArticleByID/{id}',['as' => 'postUpdateArticleByID/', 'uses' => 'BlogController@postUpdateArticleByID']);	
 Route::get('/deleteArticleByID/{id}',['as' => 'deleteArticleByID/', 'uses' => 'BlogController@deleteArticleByID']);	
 
+Route::any('/getLongest/{value}',['as' => 'GetLongest/', 'uses' => 'Q3Controller@GetLongest']);	
+
+
+
+
